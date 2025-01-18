@@ -1,70 +1,72 @@
-# Task Tracker CLI Application
 
-This is a command-line application to track and manage your tasks. You can add tasks, update them, mark them as completed, delete them, and list all of them.
+# 📝 Task Tracker CLI Application
 
-## Features
+Welcome to the **Task Tracker CLI** — a simple command-line tool to track and manage your tasks. You can **add**, **update**, **mark as completed**, **delete**, and **list** all your tasks with ease.
 
-- **Add** a new task.
-- **Update** an existing task.
-- **Mark** a task as completed.
-- **Delete** a task.
-- **List** all tasks with their completion status.
+## 🚀 Features
 
-## Prerequisites
+- ➕ **Add** a new task.
+- ✏️ **Update** an existing task.
+- ✅ **Mark** a task as completed.
+- ❌ **Delete** a task.
+- 📜 **List** all tasks with their completion status.
+
+## 🛠️ Prerequisites
 
 - Go 1.17 or higher
-- A terminal or command prompt
 
-## Installation
+## 🏗️ Installation
 
-### 1. Clone the repository
+### 1️⃣ Clone the Repository
 
 Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/sumitnegi7/golang-todo-cli-cobra
-cd task-tracker-go-cli
+cd golang-todo-cli-cobra
 ```
 
-### 2. Build the binary
+### 2️⃣ Build the Binary
 
-To build the executable for your platform, use the `go build` command:
+To build the executable for your platform, run:
 
 ```bash
 go build -o task-tracker
 ```
 
-This will generate a binary executable called `task-tracker` in your project directory.
+This will generate a binary executable named `task-tracker` in your project directory.
 
-### 3. Install the binary globally (optional)
+### 3️⃣ Install the Binary Globally (Optional)
 
-If you want to install the application globally to run it from anywhere on your system, use the `go install` command:
+To install the app globally and run it from anywhere on your system, use:
 
 ```bash
 go install
 ```
 
-This will install the executable into your `$GOPATH/bin` directory, or `$GOBIN` if it is set.
+This will place the executable into your `$GOPATH/bin` directory (or `$GOBIN` if set).
 
-### 4. Run the application
+### 4️⃣ Run the Application
 
-Once the binary is built, you can run the CLI application from your terminal:
+Once the binary is built, you can run the CLI application:
+
+On macOS/Linux:
 
 ```bash
 ./task-tracker [flags]
 ```
 
-On Windows, you can run:
+On Windows:
 
 ```bash
 task-tracker.exe [flags]
 ```
 
-## Supported Commands
+## 🧑‍💻 Supported Commands
 
-### 1. **Add a Task**
+### 1️⃣ **Add a Task**
 
-Adds a new task to your task list.
+Add a new task to your task list:
 
 ```bash
 task-tracker add "Task description"
@@ -73,17 +75,17 @@ task-tracker add "Task description"
 **Example:**
 
 ```bash
-task-tracker add "Eat breafast"
+task-tracker add "Eat breakfast"
 ```
 
 **Output:**
 ```
-Todo added successfully. 3
+Todo added successfully. Task ID: 3
 ```
 
-### 2. **Update a Task**
+### 2️⃣ **Update a Task**
 
-Updates the task description by its ID.
+Update the task description by its ID:
 
 ```bash
 task-tracker update <task_id> "New task description"
@@ -92,7 +94,7 @@ task-tracker update <task_id> "New task description"
 **Example:**
 
 ```bash
-task-tracker update 1 "Eat eggs in breakfast"
+task-tracker update 1 "Eat eggs for breakfast"
 ```
 
 **Output:**
@@ -100,9 +102,9 @@ task-tracker update 1 "Eat eggs in breakfast"
 Task updated successfully
 ```
 
-### 3. **Mark Task as Done**
+### 3️⃣ **Mark Task as Done**
 
-Marks the task as completed (done) by its ID.
+Mark the task as completed (done) by its ID:
 
 ```bash
 task-tracker mark-done <task_id>
@@ -119,9 +121,9 @@ task-tracker mark-done 1
 Task ID 1 marked as done.
 ```
 
-### 4. **List All Tasks**
+### 4️⃣ **List All Tasks**
 
-Lists all tasks with their statuses, including whether they are completed or not.
+List all tasks with their completion status:
 
 ```bash
 task-tracker list
@@ -135,14 +137,15 @@ task-tracker list
 
 **Output:**
 ```
-ID  TODO                    COMPLETED   CREATEDAT           
-1   Eat eggs in breakfast  ✅  True     2025-01-17 02:00:21 
-2   abc         ✅             True     2025-01-18 00:30:53 
+ID   TODO                        COMPLETED   CREATED AT
+-----------------------------------------------------------
+1    Eat eggs for breakfast      ✅ True      2025-01-17 02:00:21
+2    abc                         ✅ True      2025-01-18 00:30:53
 ```
 
-### 5. **Delete a Task**
+### 5️⃣ **Delete a Task**
 
-Deletes a task by its ID.
+Delete a task by its ID:
 
 ```bash
 task-tracker del <task_id>
@@ -161,7 +164,7 @@ Task with ID 1 deleted successfully.
 
 ---
 
-## Example Workflow
+## 💡 Example Workflow
 
 1. **Add a Task:**
    ```bash
@@ -190,9 +193,6 @@ Task with ID 1 deleted successfully.
 
 ---
 
+## 📜 License
 
-
-## License
-
-This project is licensed under the MIT License
-
+This project is licensed under the **MIT License**.
